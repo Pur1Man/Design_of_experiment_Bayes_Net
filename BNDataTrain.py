@@ -29,9 +29,7 @@ cancer_infer = VariableElimination(mod)
 q = cancer_infer.query(variables=['HA'])
 print(q)
 
-#cancer_infer = BeliefPropagation(mod)
-#q = cancer_infer.query(variables=['HA'])
-#print(q)
+
 
 
 
