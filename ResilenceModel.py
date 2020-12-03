@@ -1,4 +1,3 @@
-#coding: utf-8
 from pgmpy.models import BayesianModel
 from pgmpy.factors.discrete import TabularCPD
 #定义模型结构
@@ -50,7 +49,6 @@ cancer_infer = VariableElimination(cancer_model)
 q = cancer_infer.query(variables=['HA'])
 print(q)
 #诊断在某些证据下的概率
-#from pgmpy.inference import VariableElimination
 cancer_infer = VariableElimination(cancer_model)
 q = cancer_infer.query(variables=['BT'], evidence={'PX': 1})
 print(q)
